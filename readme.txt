@@ -4,9 +4,9 @@ Tags: woocommerce, errors, error log, developers, debug
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.2.2
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.2.3
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Sends the previous day's WooCommerce fatal error log to specified email(s) using Action Scheduler.
 
@@ -26,6 +26,10 @@ Sends the previous day's WooCommerce fatal error log to specified email(s) using
 3. Go to Settings page to change it.
 
 == Changelog ==
+
+= 1.2.3 =
+* Updated license to GPLv3
+* Updated function names to avoid conflicts with other plugins
 
 = 1.2.2 =
 * Plugin Check fixes
