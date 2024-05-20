@@ -43,7 +43,7 @@ function rs_elew_wc_daily_logs_emailer_add_admin_menu() {
 		'Error Logs Emailer for WooCommerce',
 		'Error Logs Emailer',
 		'manage_options',
-		'wc-daily-logs-emailer',
+		'error-logs-emailer-for-woocommerce',
 		'rs_elew_wc_daily_logs_emailer_settings_page'
 	);
 }
@@ -56,7 +56,7 @@ function rs_elew_wc_daily_logs_emailer_settings_init() {
 
 	add_settings_section(
 		'rs_elew_wc_daily_logs_emailer_section',
-		__( 'Configure your daily error log email settings.', 'wc-daily-logs-emailer' ),
+		__( 'Configure your daily error log email settings.', 'error-logs-emailer-for-woocommerce' ),
 		'rs_elew_wc_daily_logs_emailer_settings_section_callback',
 		'rs_elew_wc_daily_logs_emailer',
 		array(
@@ -66,7 +66,7 @@ function rs_elew_wc_daily_logs_emailer_settings_init() {
 
 	add_settings_field(
 		'wc_log_email',
-		__( 'Log Email Address', 'wc-daily-logs-emailer' ),
+		__( 'Log Email Address', 'error-logs-emailer-for-woocommerce' ),
 		'rs_elew_wc_log_email_render',
 		'rs_elew_wc_daily_logs_emailer',
 		'rs_elew_wc_daily_logs_emailer_section'
@@ -225,7 +225,7 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'rs_elew_wc_da
  * @return array Modified array of plugin action links.
  */
 function rs_elew_wc_daily_logs_emailer_add_settings_link( $links ) {
-	$settings_link = '<a href="' . admin_url( 'options-general.php?page=wc-daily-logs-emailer' ) . '">' . __( 'Settings' ) . '</a>';
+	$settings_link = '<a href="' . admin_url( 'options-general.php?page=error-logs-emailer-for-woocommerce' ) . '">' . __( 'Settings' ) . '</a>';
 	array_unshift( $links, $settings_link );
 	return $links;
 }
