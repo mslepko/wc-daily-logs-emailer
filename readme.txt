@@ -17,13 +17,18 @@ Sends the previous day's WooCommerce fatal error log to specified email(s) using
 - Know what errors are happening on your site without constantly checking the logs
 - Set the email where error logs should be sent if it's not a site admin
 - Add multiple email addresses
-- Emails are sent at 5AM 
+- Emails are sent at 5AM
 
 == Installation ==
 
 1. Upload the plugin to your site, activate it.
 2. By default emails with errors are sent to admin email address.
 3. Go to Settings page to change it.
+
+== Screenshots ==
+
+1. Receive Daily WooCommerce Error Logs Directly to Your Inbox
+2. Emails priority and default settings
 
 == Changelog ==
 
